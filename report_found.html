@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Found Item | CampusFind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CampusFind.</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Browse Items</a>
+        <a href="report_lost.html">Report Lost</a>
+        <a href="report_found.html">Report Found</a>
+        <a href="status.html">Claim Status</a>
+    </nav>
+
+    <a href="claim.html" class="nav-button">Claim Item</a>
+</header>
+
+<section class="form-section">
+
+    <div class="form-heading">
+        <p>FOUND SOMETHING?</p>
+        <h1>Report a Found Item</h1>
+        <p>Help someone recover their missing belongings by sharing the details.</p>
+    </div>
+
+    <form id="foundForm">
+
+        <div class="form-group">
+            <label for="foundName">Item Name</label>
+            <input type="text" id="foundName"
+            placeholder="e.g. Black Wallet" required>
+        </div>
+
+        <div class="form-group">
+            <label for="foundCategory">Category</label>
+            <select id="foundCategory" required>
+                <option value="">Select Category</option>
+                <option>Electronics</option>
+                <option>Books & Stationery</option>
+                <option>Bags & Accessories</option>
+                <option>Personal Belongings</option>
+                <option>Others</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="foundLocation">Found Location</label>
+            <input type="text" id="foundLocation"
+            placeholder="e.g. College Canteen" required>
+        </div>
+
+        <div class="form-group">
+            <label for="foundDate">Date Found</label>
+            <input type="date" id="foundDate" required>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="foundDescription">Description</label>
+            <textarea id="foundDescription" rows="4"
+            placeholder="Describe the item..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="foundUser">Your Name</label>
+            <input type="text" id="foundUser"
+            placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="foundContact">Contact Number</label>
+            <input type="tel" id="foundContact"
+            placeholder="Enter your contact number"
+            pattern="[0-9]{10}" maxlength="10" required>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Submit Found Report
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <h3>CampusFind.</h3>
+    <p>Helping campus communities reconnect with their belongings.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

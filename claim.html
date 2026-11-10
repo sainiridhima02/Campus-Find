@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Item | CampusFind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CampusFind.</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Browse Items</a>
+        <a href="report_lost.html">Report Lost</a>
+        <a href="report_found.html">Report Found</a>
+        <a href="status.html">Claim Status</a>
+    </nav>
+
+    <a href="claim.html" class="nav-button">Claim Item</a>
+</header>
+
+<section class="form-section">
+
+    <div class="form-heading">
+        <p>RECONNECT WITH YOUR BELONGINGS</p>
+        <h1>Claim an Item</h1>
+        <p>Provide your details to submit an item ownership claim.</p>
+    </div>
+
+    <div id="selectedItemDetails" class="selected-item">
+    </div>
+
+    <form id="claimForm">
+
+        <div class="form-group">
+            <label for="claimName">Your Name</label>
+            <input
+                type="text"
+                id="claimName"
+                placeholder="Enter your name"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="claimContact">Contact Number</label>
+            <input
+                type="tel"
+                id="claimContact"
+                placeholder="Enter 10-digit mobile number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="claimReason">
+                Why are you claiming this item?
+            </label>
+
+            <textarea
+                id="claimReason"
+                rows="4"
+                placeholder="Describe how you can identify this item..."
+                required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Submit Claim
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <h3>CampusFind.</h3>
+    <p>Helping campus communities reconnect with their belongings.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

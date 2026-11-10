@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item | CampusFind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CampusFind.</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Browse Items</a>
+        <a href="report_lost.html">Report Lost</a>
+        <a href="report_found.html">Report Found</a>
+        <a href="status.html">Claim Status</a>
+    </nav>
+
+    <a href="claim.html" class="nav-button">Claim Item</a>
+</header>
+
+<section class="form-section">
+
+    <div class="form-heading">
+        <p>LOST SOMETHING?</p>
+        <h1>Report a Lost Item</h1>
+        <p>Fill in the details below to let others know about your missing belonging.</p>
+    </div>
+
+    <form id="lostForm">
+
+        <label>Item Name</label>
+        <input type="text" id="itemName" placeholder="e.g. Blue Water Bottle" required>
+
+        <label>Category</label>
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option>Electronics</option>
+            <option>Books & Stationery</option>
+            <option>Bags & Accessories</option>
+            <option>Personal Belongings</option>
+            <option>Others</option>
+        </select>
+
+        <label>Last Seen Location</label>
+        <input type="text" id="location" placeholder="e.g. Library, Block 12" required>
+
+        <label>Date Lost</label>
+        <input type="date" id="dateLost" required>
+
+        <label>Description</label>
+        <textarea id="description" rows="4"
+        placeholder="Describe your item..." required></textarea>
+
+        <label>Your Name</label>
+        <input type="text" id="userName" placeholder="Enter your name" required>
+
+        <label>Contact Number</label>
+        <input type="tel" id="contact" placeholder="Enter your contact number"
+        pattern="[0-9]{10}" maxlength="10" required>
+
+        <button type="submit" class="submit-btn">
+            Submit Lost Report
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <h3>CampusFind.</h3>
+    <p>Helping campus communities reconnect with their belongings.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

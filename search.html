@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items | CampusFind</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CampusFind.</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Browse Items</a>
+        <a href="report_lost.html">Report Lost</a>
+        <a href="report_found.html">Report Found</a>
+        <a href="status.html">Claim Status</a>
+    </nav>
+
+    <a href="claim.html" class="nav-button">Claim Item</a>
+</header>
+
+<section class="search-section">
+
+    <div class="form-heading">
+        <p>FIND YOUR BELONGINGS</p>
+        <h1>Browse Lost & Found Items</h1>
+        <p>Search through items reported by students on campus.</p>
+    </div>
+
+    <div class="search-controls">
+
+        <input type="text" id="searchInput"
+        placeholder="Search by item name or location...">
+
+        <select id="typeFilter">
+            <option value="All">All Items</option>
+            <option value="Lost">Lost Items</option>
+            <option value="Found">Found Items</option>
+        </select>
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Books & Stationery">Books & Stationery</option>
+            <option value="Bags & Accessories">Bags & Accessories</option>
+            <option value="Personal Belongings">Personal Belongings</option>
+            <option value="Others">Others</option>
+        </select>
+
+    </div>
+
+    <div id="itemContainer" class="item-container"></div>
+
+</section>
+
+<footer>
+    <h3>CampusFind.</h3>
+    <p>Helping campus communities reconnect with their belongings.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
