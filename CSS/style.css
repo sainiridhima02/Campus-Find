@@ -650,7 +650,23 @@ nav a.nav-button {
     background: #087f70;
     color: white;
 }
+/* Make Navigation Links Look Like Buttons */
 
+nav a {
+    display: inline-block;
+    background: #087f70;
+    color: white;
+    padding: 11px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #065f55;
+    color: white;
+}
 nav a.nav-button:hover {
     background: #065f55;
     color: white;
